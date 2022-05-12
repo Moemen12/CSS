@@ -1,0 +1,354 @@
+/* 
+                                                         Element Styling 
+p {
+    color: green;
+  }
+  p {
+    color: red;
+  } 
+  
+                                                 Name Conventions And Rules
+
+._test {
+  color: red;
+}
+.user-test {
+  color: red;
+}
+
+                                              Background - Color, Image, Repeat
+
+div {
+  background-color: red; 
+  background-color: rgb(0 0 0 / 50%); 
+  background-color: #FF0000; 
+  background-image: url("../imgs/learn-programming.png");
+  background-repeat: no-repeat;
+}
+
+
+
+                                          Background – Attachment, Position, Size
+div {
+
+  background-color: rgb(0 0 0 / 50%); 
+  background-color: #FF0000; 
+  background-image: url("../imgs/learn-programming.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left top;
+  background-size: auto;
+
+
+                                            Padding
+
+div {
+  background-color: #DDD;
+
+  /* Top Right Bottom Left */
+  /* 10px 10px 10px 10px */
+  /* padding: 10px; */
+
+  /* Top Right Bottom Left */
+  /* 10px 20px 10px 20px */
+  /* padding: 10px 20px; */
+
+  /* Top Right Bottom Left */
+  /* 10px 20px 15px 20px */
+  /* padding: 10px 20px 15px; 
+
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+                                                          Margin
+ 
+div {
+  background-color: #DDD;
+  padding: 10px;
+  width: 70%;
+  margin: auto;
+}
+
+                                                        Border
+
+div {
+  background-color: #DDD;
+  padding: 10px;
+  width: 70%;
+  margin: auto;
+  border-width: 10px;
+  border-color: red;
+  border-style: solid;
+  border: 10px solid red;
+}
+
+                                                     Outline
+
+div {
+  background-color: #DDD;
+  width: 300px;
+  padding: 10px;
+  outline: 10px solid red;
+  border: 10px solid blue;
+}
+
+                                                   Display – Block, Inline-Block, Inline
+
+ Block
+
+  - Take Full Width If No Width
+  - Add Line Break
+  - Respect Padding, Margin, Width, Height
+
+  Inline
+
+  - Do Not Repsepct Width, Height
+  - Respect Padding And Margin [ Just Wight + Left ]
+  - Do Not Add Line Break
+  - Allow Elements Before And After It in The Same Line
+
+  Inline-Block
+
+  - Allow Elements Before And After It in The Same Line
+  - Respect Padding, Margin, Width, Height
+
+
+
+span {
+    background-color: #EEE;
+    display: inline-block;
+  }
+
+                                                     Element Visibility And Use Cases
+
+
+div {
+  background-color: red;
+  margin: 10px 0;
+}
+.first {
+  visibility: hidden;
+}
+
+
+                                                       Grouping Multiple Selectors
+                                                       
+.one {
+  border-bottom: 2px solid red;
+  color: red;
+}
+.two {
+  border-bottom: 2px solid green;
+  color: green;
+}
+.three {
+  border-bottom: 2px solid blue;
+  color: blue;
+}
+.four {
+  border-bottom: 2px solid black;
+  color: black;
+}
+.one,
+.two,
+.three,
+.four,
+.my-p {
+  padding: 15px;
+  margin: 12px 0;
+  background-color: #ededed;
+}
+
+                                                            Nesting
+
+        div .special {
+  color: red;
+}                                                            
+
+                                                            
+                                                    Dimensions - Width And Height
+
+div {
+  background-color: red;
+  padding: 10px;
+  display: inline-block;
+  max-width: 400px;
+}
+
+
+                                              Overflow – Overflow-X And Overflow-Y
+
+div {
+  width: 150px;
+  height: 150px;
+  background-color: #EEE;
+  margin: 20px auto;
+  border-radius: 6px;
+  overflow: scroll;
+}
+
+                                                Text – Color And Shadow
+ 
+div {
+  background-color: #f9f9f9;
+  color: rebeccapurple;
+  text-shadow: 0 0 0 red;
+}
+
+
+                                                   Text – Alignment
+
+div {
+  background-color: #f9f9f9;
+  text-align: center;
+  direction: ltr;
+}
+img {
+  vertical-align: middle;
+}
+
+                                                    Text – Decoration And Transform
+
+div {
+  background-color: #f9f9f9;
+  text-transform: capitalize;
+}
+
+                                                       Decoration And Transform
+div {
+  background-color: #f9f9f9;
+  word-spacing: 5px;
+}
+
+                                                          Text – Spacing
+div {
+  background-color: #f9f9f9;
+  word-spacing: 5px;
+}
+
+                                                    Overflow And Use Cases
+
+div {
+  background-color: #ddd;
+  padding: 10px;
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+div:hover {
+  overflow: visible;
+}
+
+                                                       Inheritance
+
+div {
+  text-align: center;
+  padding: 20px;
+  background-color: #EEE;
+  font-size: 20px;
+  border: 2px solid blue;
+}
+div p {
+  border: 2px solid;
+  border-color: inherit;
+  padding: inherit;
+}
+
+                                                          Typography – Font Family
+
+.with-ser {
+  font-family: 'Times New Roman', Times, serif;
+}
+.san-ser {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.with-ser,
+.san-ser {
+  background-color: #EEE;
+  padding: 10px;
+}
+
+                                                        Typography – Font Size And CSS Units
+
+body {
+  font-size: 40px;
+}
+div {
+  font-size: 5vw;
+}
+div span {
+  font-size: 2rem;
+}
+
+                                                    Typography – Font Style And Variant And Weight
+
+div {
+  font-variant: small-caps;
+  font-weight: bold;
+}
+p {
+  text-transform: uppercase;
+}
+
+
+                                                                         Mouse Cursor
+
+button {
+  background: transparent;
+  border: none;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+                                                                     Float And Clear
+
+.parent {
+  background-color: red;
+  padding: 10px;
+}
+.parent div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #eee;
+  width: 25%;
+  float: left;
+}
+.clear {
+  clear: both;
+}
+
+                                                        Mastering The CSS Calculation
+
+
+body {
+  margin: 0;
+}
+div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #eee;
+  float: left;
+  width: calc((100% - 60px) / 5);
+  margin-left: 10px;
+}
+
+  Content Width Is: 100%
+  6 Spaces  10px * 6 => 60px From Content Width
+  100% - 60px Available Space
+  5 Elements The Width Is: (100% - 60px) / 5
+
+
+
+
+*/
+
+
+
+
+
