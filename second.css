@@ -1,0 +1,262 @@
+     /*                                                                   Opacity
+     
+     
+     .one {
+  background-color: red;
+  opacity: 0.1;
+}
+.two {
+  background-color: rgb(255 0 0 / 0.1)
+}
+
+
+                                                                         Position
+
+div {
+  color: white;
+  width: 100px;
+  padding: 10px;
+}
+.one {
+  background-color: red;
+  position: absolute;
+}
+.two {
+  background-color: green;
+}
+
+                                                                           Z-Index
+     
+     div {
+  color: white;
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+}
+.one {
+  background-color: red;
+  left: 20px;
+  top: 20px;
+  z-index: 3;
+}
+.two {
+  background-color: green;
+  left: 15px;
+  top: 15px;
+  z-index: 2;
+}
+.three {
+  background-color: blue;
+  z-index: 1;
+}
+      
+     
+                                                                         List Styling
+ 
+     ul {
+  list-style-type: lower-armenian;
+}
+li {
+  background-color: #EEE;
+  margin-bottom: 20px;
+}
+
+                                                                         Table Styling
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+table {
+  width: 100%;
+  border: 1px solid #CCC;
+  border-spacing: 0;
+}
+table td {
+  padding: 15px;
+  background-color: #EEE;
+  border: 1px solid #CCC;
+}
+table thead td {
+  background-color: #f44336;
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
+  border-color: #F35246;
+}
+
+                                                                Pseudo Classes
+
+.one {
+  background-color: red;
+  color: white;
+}
+.two {
+  background-color: #EEE;
+  width: 100px;
+  height: 100px;
+}
+a {
+  color: green;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+}
+a:visited {
+  color: blue;
+}
+:empty {
+  border: 10px solid red;
+}
+.ch:checked {
+  display: none;
+}
+.in:focus {
+  border-color: red;
+  outline: none
+}
+
+
+                                                          Pseudo Elements - First Letter, First Line,
+
+
+.one span {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+}
+.two::first-letter {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+}
+.three::first-line {
+  font-weight: bold;
+  color: green;
+}
+::selection {
+  background-color: black;
+  color: yellow;
+}
+
+                                                                      The Margin Collapse
+
+.parent {
+  overflow: hidden;
+  margin: auto;
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  background-color: #eee;
+}
+.parent .one,
+.parent .two {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+.one {
+  background-color: #ddd;
+}
+.two {
+  background-color: #aaa;
+}
+.up {
+  background-color: red;
+  color: white;
+  height: 80px;
+  margin-bottom: 40px;
+}
+.down {
+  background-color: green;
+  color: white;
+  height: 80px;
+  margin-top: 40px;
+}
+
+
+
+                                                                  CSS Variables And Trainings
+
+
+:root {
+  --mainColor: blue;
+  --mainPadding: 10px;
+}
+.main {
+  background-color: var(--mainColor, black);
+  color: white;
+  padding: calc(20px + var(--mainPadding));
+}
+h2 {
+  color: var(--mainColor);
+  background-color: #eee;
+  padding: var(--mainPadding);
+}
+p {
+  color: var(--mainColor);
+  border: 2px solid var(--mainColor);
+  padding: var(--mainPadding);
+}
+a:hover {
+  color: var(--mainColor);
+}
+.local {
+  --mainColor: black;
+  background-color: var(--mainColor);
+  color: white;
+}
+
+                                                             Flex Box Parent - Direction, Wrap, Flow
+
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.flex {
+  background-color: #eee;
+  width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+}
+.flex div {
+  background-color: #f00;
+  color: white;
+  width: 25%;
+  text-align: center;
+  padding: 20px;
+}
+.float {
+  overflow: hidden;
+  background-color: #eee;
+  width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+}
+.float div {
+  background-color: #f00;
+  color: white;
+  float: right;
+  width: 25%;
+  text-align: center;
+  padding: 20px;
+}
+
+
+                                                  
+
+
+     
+     
+     */
+     
