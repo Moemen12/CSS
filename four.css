@@ -1,0 +1,416 @@
+/*
+                                                               Grid - Parent - Template Columns
+
+/*
+  Grid
+  Parent
+  - display: grid | inline-grid
+  - grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Repeat]
+
+
+* {
+  box-sizing: border-box;
+}
+.parent {
+  margin: 20px auto;
+  width: 800px;
+  height: 500px;
+  background-color: #ddd;
+  display: grid;
+  grid-template-columns: repeat(2, auto) repeat(2, 1fr);
+}
+.parent div {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+                                                                  Grid - Parent - Template Rows And Gap
+
+
+/*
+  Grid
+  Parent
+  - display: grid | inline-grid
+  - grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - grid-template-rows: [Number Of Rows In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - gap: [Row Gap] [Column Gap]
+
+
+* {
+  box-sizing: border-box;
+}
+.parent {
+  margin: 20px auto;
+  width: 800px;
+  height: 500px;
+  background-color: #ddd;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  /* row-gap: 10px;
+  column-gap: 10px;
+  gap: 10px 10px;
+}
+.parent div {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+                                                            Grid – Parent – Justify And Align Content
+
+
+/*
+  Grid
+  Parent
+  - display: grid | inline-grid
+  - grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - grid-template-rows: [Number Of Rows In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - gap: [Row Gap] [Column Gap]
+  - justify-content
+  - align-content
+
+
+* {
+  box-sizing: border-box;
+}
+.parent {
+  margin: 20px auto;
+  width: 800px;
+  height: 500px;
+  background-color: #ddd;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(3, auto);
+  gap: 10px 10px;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.parent div {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+                                                                - Grid - Parent - Complete Layout With Template
+
+/*
+  Grid
+  Parent
+  - display: grid | inline-grid
+  - grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - grid-template-rows: [Number Of Rows In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - gap: [Row Gap] [Column Gap]
+  - justify-content
+  - align-content
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+ul li {
+  display: inline-block;
+}
+.page {
+  height: 100vh;
+  background-color: #eee;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 50px auto 50px;
+  grid-template-areas:
+    "logo logo nav nav nav nav nav nav nav nav"
+    "cont cont cont cont cont cont cont . side side"
+    "foot foot foot foot foot foot foot foot foot foot";
+}
+h2 {
+  grid-area: logo;
+  background-color: red;
+  color: white;
+}
+nav {
+  grid-area: nav;
+  background-color: blue;
+  color: white;
+}
+section {
+  grid-area: cont;
+  background-color: yellow;
+  color: white;
+}
+aside {
+  grid-area: side;
+  background-color: green;
+  color: white;
+}
+footer {
+  grid-area: foot;
+  background-color: black;
+  color: white;
+}
+
+
+                                                         Grid – Child – Grid Column And Row
+
+/*
+  Grid
+  Parent
+  - display: grid | inline-grid
+  - grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - grid-template-rows: [Number Of Rows In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - gap: [Row Gap] [Column Gap]
+  - justify-content
+  - align-content
+  - grid-template-areas
+  Child
+  - grid-column: [Grid-Column-Start] [Grid-Column-End]
+  - grid-row: [Grid-Row-Start] [Grid-Row-End]
+
+
+* {
+  box-sizing: border-box;
+}
+.parent {
+  margin: 20px auto;
+  width: 800px;
+  height: 500px;
+  background-color: #ddd;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 10px 10px;
+}
+.parent div {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+                                                            Grid – Child – Grid Area And Trainings
+
+
+/*
+  Grid
+  Parent
+  - display: grid | inline-grid
+  - grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - grid-template-rows: [Number Of Rows In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - gap: [Row Gap] [Column Gap]
+  - justify-content
+  - align-content
+  - grid-template-areas
+  Child
+  - grid-column: [Grid-Column-Start] [Grid-Column-End]
+  - grid-row: [Grid-Row-Start] [Grid-Row-End]
+  - grid-area: [Grid-Row-Start] [Grid-Column-Start] [Grid-Row-End] [Grid-Column-End]
+
+
+* {
+  box-sizing: border-box;
+}
+.parent {
+  margin: 20px auto;
+  width: 800px;
+  height: 500px;
+  background-color: #ddd;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 10px 10px;
+}
+.parent div {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+                                                                      Min, Max And Auto Fill
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.parent {
+  margin: 20px auto;
+  height: 500px;
+  background-color: #ddd;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.parent div {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+                                                                   2D Transform – Scale
+
+
+div {
+  margin: 200px auto;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255 0 0 / 39%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  transform: scaleX(2);
+  transform: scaleY(2);
+  transform: scale(2, 2);
+}
+
+                                                                   2D Transform - Rotate
+
+
+div {
+  margin: 200px auto;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255 0 0 / 39%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  transform: rotate(45deg);
+  transform: rotate(1turn);
+  transform: rotate(0.5turn);
+  transform: rotate(0.25turn);
+}
+
+                                                                 2D Transform – Skew
+
+h2 {
+  position: relative;
+  color: white;
+  margin: 20px auto;
+  width: fit-content;
+  padding: 20px;
+}
+h2::before {
+  content: "";
+  background-color: red;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: skewX(20deg);
+}
+div {
+  margin: 200px auto;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255 0 0 / 39%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  transform: skewX(10deg);
+  transform: skewX(-10deg);
+  transform: skewY(10deg);
+  transform: skewY(-10deg);
+  transform: skew(10deg, 10deg);
+}
+                                                                      2D Transform – Matrix
+
+/*
+  matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+
+div {
+  margin: 200px auto;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255 0 0 / 39%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  transform: matrix(1.2, 0.2679, 0, 1.2, 20, 20);
+  transform: translateX(20px) translateY(20px) scaleX(1.2) skewY(15deg) skewX(0deg) scaleY(1.2);
+}
+
+
+                                                                      Transform – Origin
+
+/*
+  transform-origin
+  Syntax
+  Default Values => 50% 50% 0
+  2D Transform => transform-origin(X, Y)
+  3D Transform => transform-origin(X, Y, Z)
+  X-Axis
+  - CSS Unit [px, em, rem]
+  - %
+  - Keyword
+  -- Left = 0%
+  -- Center = 50%
+  -- Right = 100%
+  Y-Axis
+  - CSS Unit [px, em, rem]
+  - %
+  - Keyword
+  -- Top = 0%
+  -- Center = 50%
+  -- Bottom = 100%
+
+
+div {
+  margin: 200px auto;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255 0 0 / 39%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  transform-origin: 0 50%;
+  transform: rotate(100deg);
+}
+
+
+
+
+
+*/
