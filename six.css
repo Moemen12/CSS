@@ -1,0 +1,293 @@
+ /*                                                             Selectors Reference Part 4 
+                                                               
+                                                               
+   /*
+  CSS Selectors
+  - :not(Selectors)
+  - :nth-child(n)
+  - :nth-last-child(n)
+  - :nth-of-type(n)
+  - :nth-last-of-type(n)
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}                                                            
+                                                               
+                                                                   Selectors Reference Part 5                            
+                                                               
+     /*
+  CSS Selectors
+  - :root
+  - :checked
+  - :empty
+  - :disabled
+  - :required
+  - :focus
+  - ::selection
+  - ::placeholder
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}                                                          
+                                                               
+                                                                Media Queries And Responsive Design – Intro                                            
+                                                               
+     /*
+  Media Queries
+  Responsive Design
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.parent {
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px auto;
+}
+.parent > div {
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  width: 290px;
+}
+
+@media print {
+  .parent > div {
+    font-size: 100px;
+  }
+}
+
+@media print {
+  .parent > div:first-child {
+    display: none;
+  }
+}
+
+@media (min-width: 1400px) {
+  .parent > div {
+    background-color: blue;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1400px) {
+  .parent > div {
+    background-color: blue;
+  }
+}                                                          
+                                                               
+                                                         Media Queries And Responsive Design – Standards                                         
+                                                               
+        /*
+  Media Queries
+  Responsive Design
+  - Concept Of Width
+  - Mobile
+  - Small Screens
+  - Medium Screens
+  - Large Screens
+  - Future Updates
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.parent {
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px auto;
+}
+.parent > div {
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  width: 290px;
+}
+
+/* Mobile 
+
+@media (max-width: 767px) {
+}
+
+/* Small Screens 
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Medium Screens 
+
+@media (min-width: 992px) {
+}
+
+/* Large Screens 
+
+@media (min-width: 1200px) {
+}
+
+/* Custom 
+
+@media (max-width: 1199px) {
+}                                                       
+                                                               
+                                                               
+                                                               Media Queries And Responsive Design – Practice
+                                                               
+                                                               
+/*
+  Media Queries
+  Responsive Design
+  - Mobile First
+  - Test Devices
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.parent > div {
+  padding: 20px;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+/* Mobile 
+
+@media (max-width: 767px) {
+}
+
+/* Small Screens 
+
+@media (min-width: 768px) {
+  .parent > div {
+    width: calc(50% - 10px);
+  }
+}
+
+/* Medium Screens 
+
+@media (min-width: 992px) {
+  .parent > div {
+    width: calc(25% - 10px);
+  }
+}
+
+/* Large Screens 
+
+@media (min-width: 1200px) {
+}
+
+/* Custom 
+
+@media (max-width: 1199px) {
+}
+
+
+
+
+
+
+              /*
+                                                                         Create Your Framework
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.parent {
+  position: relative;
+  background-color: #eee;
+  margin: 20px auto;
+  width: 1200px;
+  height: 200px;
+}
+.parent div {
+  background-color: green;
+  color: white;
+}
+.product {
+  background-color: red;
+  color: white;
+}
+.center-position {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle-100 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.circle-200 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.border-r {
+  border-radius: 4px;
+}                                                 
+                                                                    CSS Global Values                  
+   
+/*
+  CSS Global Values
+  - inherit
+  - initial
+  - unset
+  --- If Inherit => inherit
+  --- If Not => initial
+  - revert CSS Level [4]
+  - all
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+div {
+  color: red;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #eee;
+  padding: 20px;
+  margin: 5px;
+  border: 2px solid black;
+}
+
+
+                                                               
+  */
