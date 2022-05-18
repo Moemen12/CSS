@@ -1,0 +1,341 @@
+/*                                                       3D Transform – Rotate
+
+div {
+  margin: 200px auto;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255 0 0 / 39%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  transform: rotateX(50deg);
+  transform: rotateY(50deg);
+  transform: rotateZ(50deg);
+  transform: rotate3d(0, 1, 1, 65deg);
+}
+
+                                            3D Transform - Translate, Perspective, Perspective Origin
+ 
+.shape {
+  perspective: 300px;
+  perspective-origin: center center;
+}
+.shape div {
+  margin: 200px auto;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255 0 0 / 39%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  transform: translate(100px, -100px);
+  transform: translateX(100px);
+  transform: translateZ(100px);
+  transform: translate3d(0, 0, 100px);
+}
+
+                                           3D Transform – Backface Visibility And Flip Product
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  .container {
+    margin: 40px auto;
+    width: 200px;
+    perspective: 600px;
+  }
+  .box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+     transform-style: preserve-3d;
+    transition: transform 1s;
+    transform-origin: right center;
+  }
+  .box:hover {
+    transform: translateX(-100%) rotateY(-180deg);
+  }
+  .box .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    backface-visibility: hidden;
+  }
+  .box .front {
+    background-color: red;
+  }
+  .box .back {
+    background-color: green;
+    transform: rotateY(180deg);
+  }
+
+
+                                                                Animation - KeyFrames, Name, Duration
+
+/*
+  Animation
+  - KeyFrames
+  - Name
+  - Duration
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transform: translate(-50%, -50%);
+    animation-name: change-color;
+    animation-duration: 2s;
+  }
+  /* Code One 
+  @keyframes change-color {
+    from {
+      background-color: red;
+    }
+    to {
+      background-color: blue;
+    }
+  }
+  /* Code Two 
+  @keyframes change-color {
+    0% {
+      background-color: red;
+    }
+    100% {
+      background-color: blue;
+    }
+  }
+  /* Code Three 
+  @keyframes change-color {
+    0% {
+      background-color: red;
+    }
+    5% {
+      background-color: blue;
+    }
+    80% {
+      background-color: black;
+    }
+    100% {
+      background-color: red;
+    }
+  }
+
+
+                                                     Animation – Iteration Count, Timing Function, Spinner Loading
+
+/*
+  Animation
+  - Iteration Count
+  - Timing Function
+  - Spinner Loading
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  div {
+    width: 100px;
+    height: 100px;
+    background-color: #e8e3e3;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    border-radius: 50%;
+    border: 5px solid #e91e63;
+    transition: transform 0.3s;
+    border-left-color: transparent;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+                                                            Animation - Direction, Fill Mode, Play State, Delay
+
+/*
+  Animation
+  - Iteration Count
+  - Timing Function
+  - Spinner Loading
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  div {
+    width: 100px;
+    height: 100px;
+    background-color: #e8e3e3;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    animation-name: coloring;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-delay: -2s;
+    animation-fill-mode: both;
+    animation-play-state: running;
+    animation: coloring 3s linear 2s infinite reverse;
+  }
+  div:hover {
+    animation-play-state: paused;
+  }
+  @keyframes coloring {
+    0% {
+      background-color: red;
+    }
+    50% {
+      background-color: blue;
+    }
+    100% {
+      background-color: black;
+    }
+  }
+
+
+                                                           Up And Down Loading Animation Training
+/*
+  Loading Animation
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #333;
+  }
+  .load {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+  }
+  .load div {
+    width: 20px;
+    height: 20px;
+    background-color: orchid;
+    border-radius: 50%;
+    margin: 0 5px;
+    animation-name: up-and-down;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .load .two {
+    animation-delay: 0.3s;
+  }
+  .load .three {
+    animation-delay: 0.6s;
+  }
+  @keyframes up-and-down {
+    to {
+      opacity: 0.2;
+      transform: translateY(-20px);
+    }
+  }
+
+
+                                                                  Selectors Reference Part 1
+
+/*
+  CSS Selectors
+  - *
+  - Element => [p, div, h2]
+  - Element OtherElement => div p
+  - .class-name
+  - #id-name
+  - .parent .child
+  - .class-one.class-two
+  - .class-name div, .class-name p
+  - Element.class-name => p.class-name
+  - .parent > .child => Direct Child
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+                                                                     Selectors Reference Part 2
+
+
+
+/*
+  CSS Selectors
+  - :first-child
+  - :last-child
+  - :first-of-type
+  - :last-of-type
+  - :only-child
+
+                                                                  CSS Selectors Reference Part 3
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+
+
+
+
+*/
