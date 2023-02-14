@@ -1,0 +1,334 @@
+/*
+
+First assignment css Elzero webschool
+
+
+Any Element With Class Title 
+.title {
+}
+
+/* Any Element With id nav 
+#nav {
+}
+
+/* Any Element With tag div 
+div {
+}
+
+/* Any Element With tag h2 
+h2 {
+}
+
+second assignment css Elzero webschool
+
+<!-- external style -->
+<link rel="stylesheet" href="css/file.css" />
+
+<!-- internal style -->
+<style>
+p {
+  color: red;
+}
+</style>
+
+<!-- inline style -->
+<p style="color: blue;">This Is Our Paragraph</p>
+
+third assignment css Elzero webschool
+<link rel="stylesheet" href="master.css" />
+
+fourth assignment css Elzero webschool
+
+<link rel="stylesheet" href="main/master.css" />
+
+fifth assignment css Elzero webschool
+
+
+/* valid 
+._user-name {
+}
+
+/* valid 
+.-user-name {
+}
+
+/* valid 
+.-user-name {
+}
+
+/* not valid 
+.1user-name {
+}
+
+/* not valid 
+.@user-name {
+}
+
+/* not valid 
+.user@name {
+}
+
+/* valid 
+._user10name {
+}
+
+/* valid 
+.u {
+}
+
+sixth assignment css Elzero webschool
+
+/* bad 
+.USERNAME {
+}
+
+/* bad 
+.UserName {
+}
+
+/* good 
+.user-name {
+}
+
+/* bad 
+.userName {
+}
+
+/* good
+.usernameprofile {
+}
+
+------------------------------------------
+
+first assignment css Elzero webschool
+
+
+.assign-1-shape-1 {
+    width: 500px;
+    background-color: blueviolet;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.assign-1-shape-2 {
+    width: 500px;
+    background-color: rgb(138, 43, 226, 50%);
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.assign-1-shape-3 {
+    width: 500px;
+    background-color: rgb(138, 43, 226, 10%);
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+second assignment css Elzero webschool
+
+
+.assign-2-shape-1 {
+    width: 400px;
+    height: 400px;
+    background-image: url('css-assignment-5-8.png');
+    background-repeat: no-repeat;
+}
+
+.assign-2-shape-2 {
+    width: 400px;
+    height: 400px;
+    background-image: url('css-assignment-5-8.png');
+    background-repeat: repeat-y;
+}
+
+.assign-2-shape-3 {
+    width: 400px;
+    height: 400px;
+    background-image: url('css-assignment-5-8.png');
+    background-repeat: repeat-x;
+
+}
+
+.assign-2-shape-4 {
+    width: 400px;
+    height: 400px;
+    background-image: url('css-assignment-5-8.png');
+    background-repeat: repeat;
+
+}
+
+third assignment css Elzero webschool
+
+.assign-3-shape-1 {
+    width: 400px;
+    height: 400px;
+    background-image: url('css-assignment-5-8.png');
+    background-repeat: no-repeat;
+}
+
+.assign-3-shape-2 {
+    width: 400px;
+    height: 400px;
+    background-image: url('css-assignment-5-8.png');
+    background-repeat: repeat-y;
+    background-position: right;
+}
+
+.assign-3-shape-3 {
+    width: 400px;
+    height: 400px;
+    background-image: url('css-assignment-5-8.png');
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+.assign-3-shape-4 {
+    width: 400px;
+    height: 400px;
+    background-image: url('css-assignment-5-8.png');
+    background-repeat: repeat;
+}
+
+fourth assignment css Elzero webschool
+
+.assign-4-shape-1 {
+    width: 400px;
+    height: 400px;
+    background-image: url('css-assignment-5-8.png');
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+}
+
+.assign-4-shape-2 {
+    width: 400px;
+    height: 400px;
+    background-image: url('css-assignment-5-8.png');
+    background-repeat: repeat-y;
+    background-position: right;
+    background-size: 80% 100%;
+}
+
+.assign-4-shape-3 {
+    width: 400px;
+    height: 400px;
+    background-image: url('css-assignment-5-8.png');
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: 100% 80%;
+}
+
+.assign-4-shape-4 {
+    width: 400px;
+    height: 400px;
+    background-image: url('css-assignment-5-8.png');
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    background-position: bottom right;
+}
+
+
+first assignment css Elzero webschool
+
+.Shape-1 {
+    display: inline-block;
+    border: 5px solid red;
+    outline: 5px solid black;
+}
+
+.Shape-2 {
+    display: inline-block;
+    border-width: 5px;
+    border-style: solid;
+    border-color: blue green blue green;
+    outline: 5px solid black;
+}
+
+.Shape-3 {
+    display: inline-block;
+    border-width: 5px;
+    border-style: dashed;
+    border-color: red green blue yellow;
+    outline: 5px solid black;
+}
+
+
+second assignment css Elzero webschool
+
+div {
+    margin-top: 20px;
+}
+
+.Shape-1 {
+    width: 400px;
+    background-color: #EEE;
+    border-left: 5px;
+    border-left-color: crimson;
+    border-style: solid;
+    border-top-color: #EEE;
+    outline: #EEE solid 5px;
+    border-bottom-color: #EEE;
+    border-right-color: #EEE;
+    padding: 0px 5px;
+
+}
+
+.Shape-2 {
+    width: 400px;
+    background-color: #EEE;
+    border-left: 5px;
+    border-left-color: crimson;
+    border-style: solid;
+    border-top-color: #EEE;
+    outline: #EEE solid 5px;
+    border-bottom-color: #EEE;
+    border-right-color: #EEE;
+    padding: 0px 5px;
+    visibility: hidden;
+}
+
+.Shape-3 {
+    width: 400px;
+    background-color: #EEE;
+    border-left: 5px;
+    border-left-color: aqua;
+    border-style: solid;
+    border-top-color: #EEE;
+    outline: #EEE solid 5px;
+    border-bottom-color: #EEE;
+    border-right-color: #EEE;
+    padding: 0px 5px;
+}
+
+first assignment css Elzero webschool
+
+.parent div.child span {
+    color: red;
+}
+
+.parent .title {
+    color: blue;
+}
+
+div p,
+div.title {
+    color: green;
+}
+
+second assignment css Elzero webschool
+
+div {
+    background-color: brown;
+    max-width: 400px;
+    margin-top: 5px;
+    height: 30px;
+    width: fit-content;
+    color: white;
+    overflow: hidden;
+
+}
+
+*/
