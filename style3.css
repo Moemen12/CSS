@@ -1,0 +1,701 @@
+/*
+first assignment css Elzero webschool
+
+div {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.green {
+    background-color: green;
+    z-index: 3;
+    left: 25px;
+    top: 25px;
+}
+
+.blue {
+    background-color: blue;
+    z-index: 2;
+    left: 20px;
+    top: 20px;
+
+}
+
+.red {
+    background-color: red;
+    z-index: 4;
+    left: 30px;
+    top: 30px;
+}
+
+.black {
+    background-color: black;
+    z-index: 1;
+    top: 25px;
+    left: 20px;
+}
+
+second assignment css Elzero webschool
+
+div {
+    width: 400px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    border-left: 2px solid #2aa5cf;
+    border-right: 2px solid #2aa5cf;
+    position: relative;
+
+}
+
+span {
+    position: absolute;
+    color: white;
+}
+
+.top-left {
+    padding: 3px 7px;
+    background-color: rgb(0, 183, 255);
+    border-right: 2px solid red;
+    left: -12px;
+    top: -12px;
+}
+
+.bottom-left {
+    padding: 3px 7px;
+    background-color: #2aa5cf;
+    border-right: 2px solid red;
+    left: -12px;
+    bottom: -12px;
+}
+
+.top-right {
+    padding: 3px 7px;
+    background-color: #2aa5cf;
+    border-left: 2px solid red;
+    top: -12px;
+    right: -12px;
+}
+
+.bottom-right {
+    padding: 3px 7px;
+    background-color: #2aa5cf;
+    border-left: 2px solid red;
+    bottom: -12px;
+    right: -12px;
+}
+
+third assignment css Elzero webschool
+
+  <ul class="parent">
+      <li class="html">
+        HTML
+        <ol>
+          <li>Slim</li>
+          <li>Pugjs</li>
+          <li>HAML</li>
+        </ol>
+      </li>
+
+      <li class="css">
+        CSS
+        <ol>
+          <li>SASS</li>
+          <li>LESS</li>
+          <li>PostCSS</li>
+        </ol>
+      </li>
+
+      <li class="js">
+        JavaScript
+        <ul>
+          <li>Vuejs</li>
+          <li>Sveltejs</li>
+        </ul>
+      </li>
+    </ul>
+
+
+    .parent {
+    width: 400px;
+    margin: auto;
+    list-style: none;
+}
+
+.html, .css, .js {
+    background-color: #eee;
+    padding-bottom: 7px;
+    padding-top: 10px;
+    padding-left: 7px;
+    margin-bottom: 20px;
+}
+
+.css ol {
+    list-style-type: upper-roman;
+}
+
+ol {
+    padding-left: 25px;
+
+}
+
+.html li, .css li, .js li {
+    background-color: white;
+    margin: 5px 10px;
+    padding: 5px 10px;
+}
+
+fourth assignment css Elzero webschool
+
+    <p>Developers Rating</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Avatar</th>
+          <th>Group</th>
+          <th>Name</th>
+          <th>Points</th>
+          <th>Control</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="https://picsum.photos/50" alt="" /></td>
+          <td>Ninja</td>
+          <td>ahmed mohamed</td>
+          <td>120</td>
+          <td>
+            <span class="view">View</span><span class="delete">Delete</span>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="https://picsum.photos/50" alt="" /></td>
+          <td rowspan="2">Shades</td>
+          <td>shady nabil</td>
+          <td>180</td>
+          <td>
+            <span class="view">View</span><span class="delete">Delete</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="https://picsum.photos/50" alt="" /></td>
+          <td>eman mohamed</td>
+          <td>160</td>
+
+          <td>
+            <span class="view">View</span><span class="delete">Delete</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="https://picsum.photos/50" alt="" /></td>
+          <td rowspan="2">Valhala</td>
+          <td>mohamed ibrahim</td>
+          <td>190</td>
+          <td>
+            <span class="view">View</span><span class="delete">Delete</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="https://picsum.photos/50" alt="" /></td>
+          <td>nour atef</td>
+          <td>110</td>
+          <td>
+            <span class="view">View</span><span class="delete">Delete</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="https://picsum.photos/50" alt="" /></td>
+          <td>Union</td>
+          <td>mahmoud adel</td>
+          <td>90</td>
+          <td>
+            <span class="view">View</span><span class="delete">Delete</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+p {
+    text-align: center;
+    font-weight: bold;
+}
+
+table {
+    margin: auto;
+    border-spacing: 1px;
+    font-family: sans-serif;
+    font-size: small;
+    width: 600px;
+    text-align: center;
+}
+
+
+tbody {
+    background-color: #eee;
+}
+
+tbody tr {
+    height: 76px;
+}
+
+th {
+    background-color: #282a35bd;
+    color: white;
+    padding: 10px;
+
+}
+
+.view {
+    padding: 2px 5px;
+    background-color: #2aa5cf;
+    margin-right: 5px;
+}
+
+.view, .delete {
+    color: white;
+    cursor: pointer;
+}
+
+.delete {
+    padding: 2px 5px;
+    background-color: #e91e63;
+}
+
+
+first assignment css Elzero webschool
+
+
+div {
+    margin: auto;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+
+}
+
+div:first-child {
+    background-color: #eee;
+    line-height: 60px;
+}
+
+div:last-child {
+    background-color: #eee;
+    line-height: 60px;
+}
+
+div:not(:first-child, :last-child) {
+    background-color: red;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+second assignment css Elzero webschool
+
+div {
+    margin: auto;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #eee;
+    position: relative;
+}
+
+div::first-letter {
+    position: absolute;
+    background-color: red;
+    padding: 5px;
+    color: white;
+    display: inline-block;
+    margin-left: -42px;
+
+
+}
+
+third assignment css Elzero webschool
+
+p {
+    background-color: #eee;
+    padding: 17px;
+    border-left: 3px solid #ff00bf;
+    font-family: sans-serif;
+    width: 400px;
+    margin-left: 200px;
+    position: relative;
+}
+
+p:first-child::before {
+    content: attr(data-person);
+    display: inline-block;
+    background-color: #eee;
+    position: absolute;
+    left: -100px;
+    top: 0px;
+    padding: 10px;
+    margin-top: 7px;
+
+
+}
+
+p:first-child::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -30px;
+    top: 40%;
+    margin-top: -10px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent #ff00bf transparent transparent;
+
+}
+
+
+
+
+
+p:not(:first-child, :last-child)::before {
+    content: attr(data-person);
+    display: inline-block;
+    background-color: #eee;
+    position: absolute;
+    left: -100px;
+    top: 0px;
+    padding: 10px;
+    margin-top: 7px;
+
+}
+
+p:not(:first-child, :last-child)::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -30px;
+    top: 40%;
+    margin-top: -10px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent #ff00bf transparent transparent;
+}
+
+
+
+p:last-child::before {
+    content: attr(data-person);
+    display: inline-block;
+    background-color: #eee;
+    position: absolute;
+    left: -100px;
+    top: 0px;
+    padding: 10px;
+    margin-top: 7px;
+
+
+}
+
+p:last-child:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -30px;
+    top: 40%;
+    margin-top: -10px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent #ff00bf transparent transparent;
+}
+
+fourth assignment css Elzero webschool
+
+p {
+  background-color: #eee;
+  width: 300px;
+  margin: auto;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-right: 3px solid red;
+  counter-increment: members-counter;
+}
+
+p::before {
+  content: counter(members-counter);
+  position: absolute;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: -10px;
+  margin-left: -35px;
+}
+
+
+
+first assignment css Elzero webschool
+
+
+
+* {
+  box-sizing: border-box;
+
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: #eee;
+  border: 3px solid black;
+  float: left;
+  margin-top: 100px;
+  margin-left: calc((100% - 300px) / 4);
+  counter-increment: members-counter;
+  position: relative;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  box-shadow: 4px 3px 0 2px #03a9f4, -4px -3px 0 2px #e91e63;
+}
+
+div::before {
+  content: counter(members-counter);
+  position: absolute;
+  background-color: black;
+  color: white;
+  line-height: 25px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  left: 35px;
+  top: -15px;
+
+}
+
+div::after {
+  content: 'Element';
+  position: absolute;
+  left: 20px;
+  top: 35px
+}
+
+second assignment css Elzero webschool
+
+div {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-top-left-radius: 10px 20px;
+  border-bottom-right-radius: 10px 20px;
+  border: 1px solid transparent;
+  box-shadow: 4px 15px 35px 2px #4c4747 inset;
+  border: 1px solid rgba(0, 0, 0, 0.185);
+
+}
+
+third assignment css Elzero webschool
+
+
+    <div class="parent">
+      <div class="basic">
+        <h4>Basic</h4>
+        <div class="free">Free</div>
+      </div>
+      <div class="seperator"></div>
+      <div class="pro">
+        <h4>Pro</h4>
+        <div class="notfree">$30</div>
+      </div>
+      <p class="fix"></p>
+    </div>
+
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.parent {
+  width: 550px;
+  height: 250px;
+  margin: auto;
+}
+
+.basic, .pro {
+  width: 200px;
+  height: 220px;
+  background-color: #eee;
+  float: left;
+  margin-left: calc((100% - 400px) / 3);
+  margin-top: 25px;
+}
+
+.basic h4, .pro h4 {
+  width: fit-content;
+  background-color: #03a9f4;
+  color: white;
+  padding: 5px 60px;
+  margin: 0px auto;
+  margin-top: 15px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+
+}
+
+.free, .notfree {
+  width: 132px;
+  height: 132px;
+  background-color: #d5d0d0;
+  border-radius: 50%;
+  line-height: 132px;
+  text-align: center;
+  font-size: 30px;
+  margin: 20px auto;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+
+}
+
+.seperator {
+  font-size: 10px;
+  height: 220px;
+  width: 1px;
+  background-color: #03a9f4;
+  position: absolute;
+  left: 49.75%;
+  top: 33px;
+}
+
+
+.seperator::before {
+  content: "Or";
+  position: relative;
+  top: 45%;
+  left: -10px;
+  background-color: #03a9f4;
+  padding: 5px;
+  color: white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+p {
+  clear: both;
+}
+
+
+first assignment css Elzero webschool
+
+ <div class="first">Will Go Up On Hover in Half Second</div>
+    <div class="second">Will Go Down After Half Second</div>
+
+.first {
+  background-color: #eee;
+  width: fit-content;
+  margin: auto;
+  margin-top: 80px;
+  padding: 30px 60px 280px 60px;
+  font-family: sans-serif;
+  transition: margin-top 0.5s cubic-bezier(0.4, 0, 1, 1) 0s;
+  -webkit-transition: margin-top 0.5s cubic-bezier(0.4, 0, 1, 1) 0s;
+  -moz-transition: margin-top 0.5s cubic-bezier(0.4, 0, 1, 1) 0s;
+  -ms-transition: margin-top 0.5s cubic-bezier(0.4, 0, 1, 1) 0s;
+  -o-transition: margin-top 0.5s cubic-bezier(0.4, 0, 1, 1) 0s;
+}
+
+.second {
+  background-color: #bbafaf;
+  width: fit-content;
+  margin: auto;
+  padding: 15px 20px;
+  margin-top: -180px;
+  transition: margin-top 0.5s cubic-bezier(0.4, 0, 1, 1) 0.5s;
+  -webkit-transition: margin-top 0.5s cubic-bezier(0.4, 0, 1, 1) 0.5s;
+  -moz-transition: margin-top 0.5s cubic-bezier(0.4, 0, 1, 1) 0.5s;
+  -ms-transition: margin-top 0.5s cubic-bezier(0.4, 0, 1, 1) 0.5s;
+  -o-transition: margin-top 0.5s cubic-bezier(0.4, 0, 1, 1) 0.5s;
+}
+
+
+.first:hover {
+  margin-top: -5px;
+}
+
+.first:hover+.second {
+  margin-top: -100px;
+}
+
+
+second assignment css Elzero webschool
+
+div {
+  width: 400px;
+  margin: auto;
+  font-size: 20px !important;
+  background-color: #eee !important;
+  border: 1px solid #eee !important;
+  color: black !important;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+div::first-line {
+  visibility: hidden;
+}
+
+div::before {
+  content: 'Elzero';
+  font-weight: bold;
+  display: inline-block;
+
+}
+
+
+Third assignment css Elzero webschool
+
+:root {
+  --mainColor: #009688;
+  --mainPadding: 10px;
+}
+
+div {
+  border: 3px solid var(--mainColor, black);
+  color: var(--mainColor, red);
+  padding: var(--mainPadding, 10px);
+  margin-bottom: 10px;
+}
+
+*/
