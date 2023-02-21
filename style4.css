@@ -1,0 +1,21 @@
+/*
+First assignment ELzero Web school 
+
+div{
+  width:100px;
+  height:100px;
+ margin:auto; 
+background-color:#eee;
+display:flex;
+  align-items: center;
+  justify-content:center;
+  color:#E76F51;
+  font-family:sans-serif;
+  font-weight:bold;
+  border-radius:50%;
+  box-shadow:5px 0px 0px 0px #E76F51,
+    -5px 0px 0px 0px  #1E90FF
+;
+}
+
+*/
