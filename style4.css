@@ -18,4 +18,32 @@ display:flex;
 ;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 0;
+
+}
+
+.parent {
+  width: 600px;
+  background-color: #eee;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.parent div {
+  width: 150px;
+  background-color: red;
+  text-align: center;
+  margin-left: calc((100% - 450px) / 4);
+  padding: 5px 20px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 */
