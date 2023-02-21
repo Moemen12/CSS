@@ -18,6 +18,10 @@ display:flex;
 ;
 }
 
+
+
+second assignment elzero 
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -45,5 +49,71 @@ display:flex;
   color: white;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+
+
+third assignment elzero 
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 0;
+}
+
+.parent {
+  width: 600px;
+  background-color: #eee;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.parent div {
+  width: 150px;
+  background-color: red;
+  text-align: center;
+  margin-left: calc((100% - 450px) / 4);
+  padding: 5px 20px;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.one {
+  order: 6;
+  height: 30px;
+  align-self: flex-end;
+}
+
+.two {
+  order: 5;
+  height: 130px;
+}
+
+.three {
+  order: 2;
+  height: 30px;
+}
+
+.four {
+  order: 3;
+
+}
+
+.five {
+  order: 4;
+  height: 130px;
+}
+
+.six {
+  order: 1;
+  height: 130px;
 }
 */
